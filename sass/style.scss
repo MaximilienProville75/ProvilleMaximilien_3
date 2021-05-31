@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: auto;
+    text-align: center;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand';
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img{
+        height: 35px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #City_Search{
+       
+        width: 100%;
+        height:30px;
+        background-color: rgb(219, 219, 219);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid rgba(114, 114, 114, 0.8);
+
+
+       input { 
+           height: 100%;
+           width: auto;
+           border-style: none;
+           background-color: rgba(219, 219, 219, 0.8);
+           font-size: 20px;
+           text-align: center;
+           color: black !important;
+           font-weight: bold;
+           
+
+        }
+
+        i { 
+            height: 25px;
+            text-align: center;
+            margin-right: -20px;
+            color: black;
+            
+        }
+
+    }
+
+    #Presentation_Button{
+
+        background-color: rgba(243, 243, 243, 0.904);
+        padding-bottom: 25px;
+
+        h2{
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 0;
+            padding-top: 30px;
+        }
+        p {
+            font-weight: lighter;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background: linear-gradient(#FF79DA, #9356DC);
+            color: white;
+            height: auto;
+            width: 250px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid;
+            border-radius:35%;
+            
+        }
+    }
+}
