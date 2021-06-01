@@ -11,10 +11,16 @@ body {
 
 h1 {
   font-family: "Shrikhand";
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 780px) {
   body {
+    margin: auto;
     display: flex;
     flex-direction: column;
   }
@@ -52,7 +58,8 @@ h1 {
 
   #Presentation_Button {
     background-color: rgba(243, 243, 243, 0.904);
-    padding-bottom: 25px;
+    height: auto;
+    padding: 20px 0;
   }
   #Presentation_Button h2 {
     font-size: 35px;
@@ -70,11 +77,163 @@ h1 {
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     height: auto;
-    width: 250px;
-    font-size: 20px;
-    font-weight: bold;
+    width: auto;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
     border: 1px solid;
-    border-radius: 35%;
+    border-radius: 40px;
+    padding: 15px;
+  }
+
+  #fonctionnement_titre_items {
+    margin-top: 70px;
+  }
+  #fonctionnement_titre_items h2 {
+    text-align: left;
+    margin-left: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 45px;
+  }
+  #fonctionnement_titre_items #items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #fonctionnement_titre_items #items .items_number {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #fonctionnement_titre_items #items .number {
+    width: 20px;
+    float: left;
+    border-radius: 50%;
+    height: 20px;
+    background-color: #9356DC;
+    color: white;
+    margin-top: 22px;
+  }
+  #fonctionnement_titre_items #items .items {
+    background-color: rgba(243, 243, 243, 0.904);
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px;
+    padding-left: 0px;
+    border-radius: 20px;
+    box-shadow: 6px 5px 17px -9px rgba(0, 0, 0, 0.75);
+  }
+  #fonctionnement_titre_items #items .items i {
+    padding-top: 17px;
+    color: #747474;
+  }
+  #fonctionnement_titre_items #items .items p {
+    font-weight: bold;
+    color: #747474;
+  }
+
+  #Restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(243, 243, 243, 0.904);
+    margin-top: 70px;
+    padding-bottom: 40px;
+  }
+  #Restaurants h2 {
+    text-align: left;
+    margin-left: 15px;
+    letter-spacing: 0.5px;
+  }
+  #Restaurants .Restaurants_list figure {
+    background-color: white;
+    width: auto;
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+    margin: 20px 25px;
+    box-shadow: 6px 5px 17px -9px rgba(0, 0, 0, 0.75);
+  }
+  #Restaurants .Restaurants_list figure a {
+    text-decoration: none;
+    color: black;
+  }
+  #Restaurants .Restaurants_list figure img {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #Restaurants .Restaurants_list figure .Nouveau_Title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    background: linear-gradient(#99E2D0, #99E2D0);
+    color: #419681;
+    margin: 5px;
+  }
+  #Restaurants .Restaurants_list figure .figcaption {
+    text-align: left;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 17px;
+  }
+  #Restaurants .Restaurants_list figure .localisation {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-bottom: 15px;
+    font-weight: lighter;
+  }
+  #Restaurants .Restaurants_list figure i {
+    float: right;
+    margin-top: -13px;
+    color: gray;
+    font-weight: lighter;
+    margin-right: 25px;
+  }
+  #Restaurants .Restaurants_list img.larger_pic {
+    width: 100%;
+  }
+
+  footer #footer_blocks {
+    background-color: #2c2a2a;
+    height: auto;
+  }
+  footer #footer_blocks .footer_title {
+    font-family: "Shrikhand", cursive;
+    color: white;
+    margin-left: 25px;
+    text-align: left;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  footer #footer_blocks .footer_block {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    text-align: left;
+    margin-top: 15px;
+    padding-bottom: 60px;
+  }
+  footer #footer_blocks .footer_block a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 8px;
+  }
+  footer #footer_blocks .footer_block #_1_ {
+    margin-right: 15px;
+  }
+  footer #footer_blocks .footer_block #_2_ {
+    margin-right: 11px;
   }
 }
 
