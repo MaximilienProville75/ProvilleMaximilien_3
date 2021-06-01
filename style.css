@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
@@ -38,22 +39,24 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid rgba(114, 114, 114, 0.8);
+    position: relative;
   }
   #City_Search input {
     height: 100%;
-    width: auto;
+    width: 150px;
     border-style: none;
     background-color: rgba(219, 219, 219, 0.8);
     font-size: 20px;
     text-align: center;
     color: black !important;
     font-weight: bold;
+    position: relative;
   }
   #City_Search i {
-    height: 25px;
-    text-align: center;
-    margin-right: -20px;
-    color: black;
+    position: absolute;
+    left: 20px;
+    top: -3px;
+    color: gray;
   }
 
   #Presentation_Button {
@@ -201,6 +204,206 @@ h2 {
   }
   #Restaurants .Restaurants_list img.larger_pic {
     width: 100%;
+  }
+
+  /*Restaurants pages*/
+  header i {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  header .title_2_ {
+    margin-left: -48px;
+  }
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #banner img {
+    width: 100%;
+  }
+
+  #banner_1_ img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  #Restaurant_browser {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-top: -50px;
+    background-color: white;
+  }
+
+  #title h1 {
+    font-family: "Shrikhand";
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  #title i {
+    float: right;
+    margin-top: -65px;
+    margin-right: 30px;
+    color: #747474;
+  }
+
+  #Entrées {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #Entrées .Subtitle {
+    text-align: left;
+    margin-left: 20px;
+    color: gray;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+    position: relative;
+  }
+  #Entrées .Subtitle:before {
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    height: 0;
+    width: 50px;
+    content: "";
+    border-top: 3px solid #99E2D0;
+  }
+  #Entrées .item-title {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 19px;
+  }
+  #Entrées .item {
+    background-color: white;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px -9px rgba(0, 0, 0, 0.75);
+  }
+  #Entrées .item p {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    font-weight: lighter;
+  }
+  #Entrées .item p span {
+    font-weight: bolder;
+  }
+
+  #Plats {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #Plats .Subtitle {
+    text-align: left;
+    margin-left: 20px;
+    color: gray;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+    position: relative;
+  }
+  #Plats .Subtitle:before {
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    height: 0;
+    width: 50px;
+    content: "";
+    border-top: 3px solid #99E2D0;
+  }
+  #Plats .item-title {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 19px;
+  }
+  #Plats .item {
+    background-color: white;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px -9px rgba(0, 0, 0, 0.75);
+  }
+  #Plats .item p {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    font-weight: lighter;
+  }
+  #Plats .item p span {
+    font-weight: bolder;
+  }
+
+  #DESSERTS {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #DESSERTS .Subtitle {
+    text-align: left;
+    margin-left: 20px;
+    color: gray;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+    position: relative;
+  }
+  #DESSERTS .Subtitle:before {
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    height: 0;
+    width: 50px;
+    content: "";
+    border-top: 3px solid #99E2D0;
+  }
+  #DESSERTS .item-title {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 19px;
+  }
+  #DESSERTS .item {
+    background-color: white;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px -9px rgba(0, 0, 0, 0.75);
+  }
+  #DESSERTS .item p {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    font-weight: lighter;
+  }
+  #DESSERTS .item p span {
+    font-weight: bolder;
+  }
+
+  #order_button button {
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 15px 40px 15px 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   footer #footer_blocks {
