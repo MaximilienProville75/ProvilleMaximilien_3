@@ -473,6 +473,24 @@ footer #footer_blocks .footer_block #_2_ {
   #Restaurants .Restaurants_list figure {
     width: 462px;
   }
+
+  #PLATS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #Entrées {
+    width: 450px;
+  }
+
+  #Plats {
+    width: 450px;
+  }
+
+  #DESSERTS {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1530px) {
   #Restaurants {
