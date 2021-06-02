@@ -19,7 +19,6 @@ h2{
     letter-spacing: 0.5px;
 }
 
-@media screen and (max-width: 780px) {
     body {
         margin:auto; 
         display: flex;
@@ -149,6 +148,7 @@ h2{
                 padding-left: 0px;
                 border-radius: 20px;
                 box-shadow: 6px 5px 17px -9px rgb(0 0 0 / 75%);
+                max-width: 400px;
 
                 
 
@@ -248,13 +248,7 @@ h2{
             img.larger_pic{
                 width: 100%;
             }
-
-
-
-
-
         }
-
     }
 
     /*Restaurants pages*/
@@ -318,6 +312,7 @@ h2{
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
+        
 
 
         .Subtitle{
@@ -369,15 +364,6 @@ h2{
         }
 
     }
-
-
-
-
-
-
-
-
-
 
     #Plats{
         display: flex;
@@ -504,36 +490,6 @@ h2{
         margin-top: 50px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     footer {
         #footer_blocks{
             background-color: rgb(44, 42, 42);
@@ -582,6 +538,65 @@ h2{
 
     }
 
+@media screen and (min-width: 1024px){
+    header img {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 
+
+    #fonctionnement_titre_items {
+        margin-top: 50px;
+    }
+
+    #items{
+        justify-content: space-evenly !important;
+        display: flex;
+        flex-direction: unset !important;
+
+        .items_number {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 400px;
+        }
+    }
+
+    #Restaurants{
+        margin-top: 50px;
+
+        .Restaurants_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            figure{
+                
+            width: 462px;
+
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    #Restaurants{
+        margin-top: 50px;
+
+        .Restaurants_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            figure{
+                
+            width: 550px;
+
+            }
+        }
+
+    }
 
 }
