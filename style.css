@@ -462,6 +462,18 @@ footer #footer_blocks .footer_block #_2_ {
     width: 400px;
   }
 
+  #banner img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #banner_1_ img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
   #Restaurants {
     margin-top: 50px;
   }
