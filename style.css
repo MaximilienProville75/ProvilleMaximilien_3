@@ -643,6 +643,12 @@ footer #footer_blocks .footer_block #_2_ {
   margin-right: 11px;
 }
 
+#Email_Page img {
+  width: 100%;
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+
 @media screen and (min-width: 1024px) {
   header img {
     height: auto;
