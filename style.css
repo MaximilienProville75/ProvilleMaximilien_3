@@ -44,14 +44,24 @@ h2 {
     opacity: 0;
   }
 }
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .loader a {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Shrikhand";
   font-weight: bold;
   text-decoration: none;
-  letter-spacing: -3px;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -102,7 +112,7 @@ h2 {
 }
 
 .fill:hover {
-  animation: fill 2s ease-in-out;
+  animation: fill 3s linear;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -240,6 +250,28 @@ header img {
   font-weight: bold;
   color: #747474;
 }
+#fonctionnement_titre_items #items .items_1 {
+  background-color: rgba(147, 86, 220, 0.3);
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px;
+  padding-left: 0px;
+  border-radius: 20px;
+  box-shadow: 6px 5px 17px -9px rgba(0, 0, 0, 0.75);
+  max-width: 400px;
+}
+#fonctionnement_titre_items #items .items_1 i {
+  padding-top: 17px;
+  color: #747474;
+}
+#fonctionnement_titre_items #items .items_1 p {
+  font-weight: bold;
+  color: #747474;
+}
 
 #Restaurants {
   display: flex;
@@ -302,9 +334,8 @@ header img {
 #Restaurants .Restaurants_list figure i {
   float: right;
   margin-top: -18px;
-  color: gray;
-  font-weight: lighter;
   margin-right: 25px;
+  color: #747474;
 }
 #Restaurants .Restaurants_list img.larger_pic {
   width: 100%;
@@ -434,6 +465,8 @@ header a {
   margin-top: 10px;
   font-weight: bolder;
   font-size: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #Entrées .item {
   background-color: white;
@@ -481,6 +514,8 @@ header a {
   margin-top: 10px;
   font-weight: bolder;
   font-size: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #Plats .item {
   background-color: white;
@@ -529,6 +564,8 @@ header a {
   margin-top: 10px;
   font-weight: bolder;
   font-size: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #DESSERTS .item {
   background-color: white;
@@ -544,9 +581,13 @@ header a {
   justify-content: space-between;
   margin: 15px;
   font-weight: lighter;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #DESSERTS .item p span {
   font-weight: bolder;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #order_button button {
