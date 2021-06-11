@@ -1,0 +1,60 @@
+#Presentation_Button{
+
+    background-color: rgba(243, 243, 243, 0.904);
+    height: auto;
+    padding: 20px 0;
+
+    h2{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    p {
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    button {
+        background: linear-gradient(#FF79DA, #9356DC);
+        color: white;
+        height: auto;
+        width: auto;
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        border: 1px solid;
+        border-radius: 40px;
+        padding: 15px;
+
+        &:hover{
+            background-color: #ae80e5;
+            background-blend-mode: lighten;
+            box-shadow: 4px 4px 6px #000;
+        }
+        
+    }
+}
+#order_button button{
+        background: linear-gradient(#FF79DA, #9356DC);
+        color: white;
+        height: auto;
+        width: auto;
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        border: 1px solid;
+        border-radius: 40px;
+        padding: 15px 40px 15px 40px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+
+        &:hover{
+            background-color: #ae80e5;
+            background-blend-mode: lighten;
+            box-shadow: 4px 4px 6px #000;
+            }
+}

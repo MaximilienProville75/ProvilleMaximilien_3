@@ -1,60 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
-  margin: auto;
-  text-align: center;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-family: "Shrikhand";
-  letter-spacing: 0.5px;
-}
-
-#title {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
-}
-
-h2 {
-  letter-spacing: 0.5px;
-}
-
-@keyframes tipsy {
-  0% {
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .loader a {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
@@ -122,10 +68,48 @@ h2 {
   font-weight: bold;
 }
 
-body {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#Email_Page img {
+  width: 100%;
+  margin-bottom: -5px;
+  margin-top: -5px;
 }
 
 header img {
@@ -134,29 +118,17 @@ header img {
   margin-bottom: 10px;
 }
 
-#City_Search {
-  height: 30px;
-  background-color: #dbdbdb;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  margin-left: -30px;
+header i {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
 }
-#City_Search input {
-  height: 100%;
-  width: 150px;
-  border-style: none;
-  background-color: rgba(219, 219, 219, 0.8);
-  font-size: 20px;
-  text-align: center;
-  color: black !important;
-  font-weight: bold;
+header .title_2_ {
+  margin-left: -48px;
 }
-#City_Search i {
-  margin-left: 11px;
-  margin-top: 8px;
+header a {
+  text-decoration: none;
+  color: black;
 }
 
 #Presentation_Button {
@@ -192,6 +164,51 @@ header img {
   background-color: #ae80e5;
   background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #000;
+}
+
+#order_button button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  height: auto;
+  width: auto;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  border: 1px solid;
+  border-radius: 40px;
+  padding: 15px 40px 15px 40px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#order_button button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
+}
+
+#City_Search {
+  height: 30px;
+  background-color: #dbdbdb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-left: -30px;
+}
+#City_Search input {
+  height: 100%;
+  width: 150px;
+  border-style: none;
+  background-color: rgba(219, 219, 219, 0.8);
+  font-size: 20px;
+  text-align: center;
+  color: black !important;
+  font-weight: bold;
+}
+#City_Search i {
+  margin-left: 11px;
+  margin-top: 8px;
 }
 
 #fonctionnement_titre_items {
@@ -270,117 +287,6 @@ header img {
 }
 #fonctionnement_titre_items #items .items_1 p {
   font-weight: bold;
-  color: #747474;
-}
-
-#Restaurants {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(243, 243, 243, 0.904);
-  margin-top: 70px;
-  padding-bottom: 40px;
-}
-#Restaurants h2 {
-  text-align: left;
-  margin-left: 15px;
-  letter-spacing: 0.5px;
-}
-#Restaurants .Restaurants_list figure {
-  background-color: white;
-  width: auto;
-  height: auto;
-  position: relative;
-  border-radius: 20px;
-  margin: 20px 10px;
-  box-shadow: 6px 5px 17px -9px rgba(0, 0, 0, 0.75);
-  display: flex;
-}
-#Restaurants .Restaurants_list figure a {
-  text-decoration: none;
-  color: black;
-  flex-grow: 1;
-}
-#Restaurants .Restaurants_list figure img {
-  height: 225px;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-#Restaurants .Restaurants_list figure .Nouveau_Title {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px;
-  background: linear-gradient(#99E2D0, #99E2D0);
-  color: #419681;
-  margin: 5px;
-}
-#Restaurants .Restaurants_list figure .figcaption {
-  text-align: left;
-  font-weight: bolder;
-  letter-spacing: 0.5px;
-  margin-top: 15px;
-  margin-left: 10px;
-  font-size: 17px;
-}
-#Restaurants .Restaurants_list figure .localisation {
-  text-align: left;
-  margin-left: 10px;
-  margin-top: 0;
-  padding-bottom: 15px;
-  font-weight: lighter;
-}
-#Restaurants .Restaurants_list figure i {
-  float: right;
-  margin-top: -18px;
-  margin-right: 25px;
-  color: #747474;
-}
-#Restaurants .Restaurants_list img.larger_pic {
-  width: 100%;
-}
-
-/*Restaurants pages*/
-header i {
-  float: left;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-header .title_2_ {
-  margin-left: -48px;
-}
-header a {
-  text-decoration: none;
-  color: black;
-}
-
-#banner img {
-  width: 100%;
-}
-
-#banner_1_ img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-#Restaurant_browser {
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-  margin-top: -50px;
-  background-color: white;
-}
-
-#title h1 {
-  font-family: "Shrikhand";
-  letter-spacing: 0.5px;
-  text-align: left;
-  margin-left: 20px;
-}
-#title i {
-  margin-top: 25px;
-  margin-right: 15px;
   color: #747474;
 }
 
@@ -590,24 +496,72 @@ header a {
   text-overflow: ellipsis;
 }
 
-#order_button button {
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  height: auto;
-  width: auto;
-  font-size: 15px;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  border: 1px solid;
-  border-radius: 40px;
-  padding: 15px 40px 15px 40px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+#Restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(243, 243, 243, 0.904);
+  margin-top: 70px;
+  padding-bottom: 40px;
 }
-#order_button button:hover {
-  background-color: #ae80e5;
-  background-blend-mode: lighten;
-  box-shadow: 4px 4px 6px #000;
+#Restaurants h2 {
+  text-align: left;
+  margin-left: 15px;
+  letter-spacing: 0.5px;
+}
+#Restaurants .Restaurants_list figure {
+  background-color: white;
+  width: auto;
+  height: auto;
+  position: relative;
+  border-radius: 20px;
+  margin: 20px 10px;
+  box-shadow: 6px 5px 17px -9px rgba(0, 0, 0, 0.75);
+  display: flex;
+}
+#Restaurants .Restaurants_list figure a {
+  text-decoration: none;
+  color: black;
+  flex-grow: 1;
+}
+#Restaurants .Restaurants_list figure img {
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#Restaurants .Restaurants_list figure .Nouveau_Title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background: linear-gradient(#99E2D0, #99E2D0);
+  color: #419681;
+  margin: 5px;
+}
+#Restaurants .Restaurants_list figure .figcaption {
+  text-align: left;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 17px;
+}
+#Restaurants .Restaurants_list figure .localisation {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 0;
+  padding-bottom: 15px;
+  font-weight: lighter;
+}
+#Restaurants .Restaurants_list figure i {
+  float: right;
+  margin-top: -18px;
+  margin-right: 25px;
+  color: #747474;
+}
+#Restaurants .Restaurants_list img.larger_pic {
+  width: 100%;
 }
 
 footer #footer_blocks {
@@ -643,10 +597,63 @@ footer #footer_blocks .footer_block #_2_ {
   margin-right: 11px;
 }
 
-#Email_Page img {
+body {
+  margin: auto;
+  text-align: center;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  letter-spacing: 0.5px;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+
+h2 {
+  letter-spacing: 0.5px;
+}
+
+body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#banner img {
   width: 100%;
-  margin-bottom: -5px;
-  margin-top: -5px;
+}
+
+#banner_1_ img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#Restaurant_browser {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-top: -50px;
+  background-color: white;
+}
+
+#title h1 {
+  font-family: "Shrikhand";
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin-left: 20px;
+}
+#title i {
+  margin-top: 25px;
+  margin-right: 15px;
+  color: #747474;
 }
 
 @media screen and (min-width: 1024px) {
@@ -725,14 +732,6 @@ footer #footer_blocks .footer_block #_2_ {
   }
   #Restaurants .Restaurants_list figure {
     width: 550px;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 

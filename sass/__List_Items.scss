@@ -1,0 +1,93 @@
+
+    #fonctionnement_titre_items{
+        margin-top: 70px;
+
+        h2 {
+            text-align: left;
+            margin-left: 15px;
+            letter-spacing: 0.5px;
+            margin-bottom: 45px;
+        }
+
+        #items{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .items_number{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+
+            .number {
+                width: 20px;
+                float: left;
+                border-radius: 50%;
+                height: 20px;
+                background-color: #9356DC;
+                color: white;
+                margin-top: 22px;
+
+
+            }
+
+            .items{
+                background-color: rgba(243, 243, 243, 0.904);
+                width: 80%;
+                padding: 5px;
+                margin-bottom: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                border: 1px;
+                padding-left: 0px;
+                border-radius: 20px;
+                box-shadow: 6px 5px 17px -9px rgb(0 0 0 / 75%);
+                max-width: 400px; 
+
+                &:hover{
+                    background-color: rgba(147, 86, 220, 0.3);
+                    cursor: pointer;
+                    transform: scale(1.03);
+                    transition: ease 0.4s;;
+                }
+                i {
+                    padding-top: 17px;
+                    color: rgb(116, 116, 116);
+                }
+
+                p {
+                    font-weight: bold;
+                    color: rgb(116, 116, 116);
+                }
+            }
+            .items_1{
+                background-color: rgba(147, 86, 220, 0.3);
+                width: 80%;
+                padding: 5px;
+                margin-bottom: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                border: 1px;
+                padding-left: 0px;
+                border-radius: 20px;
+                box-shadow: 6px 5px 17px -9px rgb(0 0 0 / 75%);
+                max-width: 400px; 
+
+                i {
+                    padding-top: 17px;
+                    color: rgb(116, 116, 116);
+                }
+
+                p {
+                    font-weight: bold;
+                    color: rgb(116, 116, 116);
+                }
+            }
+        }
+
+    }

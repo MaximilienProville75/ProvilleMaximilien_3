@@ -1,0 +1,91 @@
+@media screen and (min-width: 1024px){
+    header img {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    #fonctionnement_titre_items {
+        margin-top: 50px;
+    }
+
+    #items{
+        justify-content: space-evenly !important;
+        display: flex;
+        flex-direction: unset !important;
+
+        .items_number {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 400px;
+        }
+    }
+    #banner img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    #banner_1_ img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #Restaurants{
+        margin-top: 50px;
+
+        .Restaurants_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            figure{
+                
+            width: 462px;
+
+            }
+        }
+
+    }
+
+    #PLATS {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #Entrées{
+        width: 450px;
+    }
+
+    #Plats{
+        width: 450px;
+    }
+
+    #DESSERTS{
+        width: 450px;
+    }
+}
+@media screen and (min-width: 1530px) {
+    
+
+    #Restaurants{
+        margin-top: 50px;
+
+        .Restaurants_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            figure{
+                
+            width: 550px;
+
+            }
+        }
+
+    }
+
+}
