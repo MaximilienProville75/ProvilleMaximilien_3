@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/a8f258b41c.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
     <title>Contact</title>
 </head>
 <body>
@@ -34,10 +35,20 @@
                 N'hesitez pas a nous contacter a cette adresse mail : 
             </p>
             </div>
-            <div class="Explore_button">
-                <button class="button-research" class="explore_button" type="submit">
-                  OhMyFood.Paris@gmail.com
+            <div class="Explore_button Contact">
+                <input type="text" value="OhMyFood.Paris@gmail.com" id="myInput">
+                <button onclick="myFunction()">
+                    Copy Email
                 </button>
+                <script>
+                    function myFunction() {
+                    var copyText = document.getElementById("myInput");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999)
+                    document.execCommand("copy");
+                    alert("Email copied: " + copyText.value);
+                    }
+                </script>
             </div>
         </div>
         <div id="Email_Page">
