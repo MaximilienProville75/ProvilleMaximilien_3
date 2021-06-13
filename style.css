@@ -327,6 +327,7 @@ header a {
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
+  height: 82px;
 }
 #PLATS .item p {
   font-size: 16px;
@@ -337,6 +338,12 @@ header a {
 }
 #PLATS .item span {
   margin-right: 5px;
+  float: right;
+}
+#PLATS .item .Price {
+  position: relative;
+  top: -35px;
+  right: 10px;
 }
 #PLATS .item:hover {
   padding-right: 75px;
@@ -409,7 +416,6 @@ header a {
   box-shadow: 1px 0px 20px -9px rgba(0, 0, 0, 0.75);
 }
 #Entrées .item p {
-  display: flex;
   justify-content: space-between;
   margin: 15px;
   font-weight: lighter;
@@ -459,7 +465,6 @@ header a {
   box-shadow: 1px 0px 20px -9px rgba(0, 0, 0, 0.75);
 }
 #Plats .item p {
-  display: flex;
   justify-content: space-between;
   margin: 15px;
   font-weight: lighter;
@@ -509,14 +514,13 @@ header a {
   box-shadow: 1px 0px 20px -9px rgba(0, 0, 0, 0.75);
 }
 #DESSERTS .item p {
-  display: flex;
   justify-content: space-between;
   margin: 15px;
   font-weight: lighter;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#DESSERTS .item p span {
+#DESSERTS .item span {
   font-weight: bolder;
   overflow: hidden;
   text-overflow: ellipsis;

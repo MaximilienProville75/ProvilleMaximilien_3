@@ -11,6 +11,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         transition: padding-right 450ms ease-in-out;
+        height: 82px;
 
         p{
             font-size: 16px;
@@ -21,8 +22,15 @@
         }
 
         span{
-            margin-right: 5px;  
+            margin-right: 5px;
+            float: right;  
         }
+        .Price{
+            position: relative;
+            top: -35px;
+            right: 10px;
+        }
+        
       }
       .item:hover {
         padding-right: 75px;
@@ -104,7 +112,6 @@
 
 
         p {
-            display: flex;
             justify-content: space-between;
             margin: 15px;
             font-weight: lighter;
@@ -164,7 +171,6 @@
 
 
         p {
-            display: flex;
             justify-content: space-between;
             margin: 15px;
             font-weight: lighter;
@@ -222,19 +228,18 @@
 
 
         p {
-            display: flex;
             justify-content: space-between;
             margin: 15px;
             font-weight: lighter;
             overflow: hidden;
             text-overflow: ellipsis;
-
+        }
             span{
                 font-weight: bolder;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-        }
+       
 
 
     }
