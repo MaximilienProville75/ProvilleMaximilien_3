@@ -341,9 +341,23 @@ header a {
   float: right;
 }
 #PLATS .item .Price {
-  position: relative;
-  top: -35px;
+  position: absolute;
+  top: 66%;
   right: 10px;
+}
+#PLATS .item .testP {
+  max-width: 70vw;
+}
+#PLATS .item:hover .test {
+  width: calc(100% - 50px);
+}
+#PLATS .item:hover .testP {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#PLATS .item:hover .Price {
+  right: -50px;
 }
 #PLATS .item:hover {
   padding-right: 75px;
@@ -380,7 +394,7 @@ header a {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  animation: fadein 3s ease-in-out;
+  animation: fadein 2s ease-in-out;
 }
 #Entrées .Subtitle {
   text-align: left;
@@ -428,7 +442,7 @@ header a {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  animation: fadein 6s ease-in-out;
+  animation: fadein 4s ease-in-out;
 }
 #Plats .Subtitle {
   text-align: left;
@@ -477,7 +491,7 @@ header a {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  animation: fadein 9s ease-in-out;
+  animation: fadein 6s ease-in-out;
 }
 #DESSERTS .Subtitle {
   text-align: left;
@@ -763,6 +777,9 @@ body {
   #Restaurants .Restaurants_list figure {
     width: 550px;
   }
+}
+.test {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
