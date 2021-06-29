@@ -58,9 +58,11 @@ footer #footer_blocks .footer_block #_2_ {
   top: 50%;
   display: block;
   border: 15px solid #99E2D0;
-  border-image: linear-gradient(45deg, #9356DC, #99E2D0) 1;
+  -o-border-image: linear-gradient(45deg, #9356DC, #99E2D0) 1;
+     border-image: linear-gradient(45deg, #9356DC, #99E2D0) 1;
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  animation: 10s infinite alternate ease-in-out tipsy;
+  -webkit-animation: 10s infinite alternate ease-in-out tipsy;
+          animation: 10s infinite alternate ease-in-out tipsy;
 }
 
 .loader a:before {
@@ -82,7 +84,8 @@ footer #footer_blocks .footer_block #_2_ {
   position: fixed;
   z-index: 2;
   pointer-events: none;
-  animation: loader 1s ease-in-out 3s forwards;
+  -webkit-animation: loader 1s ease-in-out 3s forwards;
+          animation: loader 1s ease-in-out 3s forwards;
 }
 
 .fill {
@@ -91,7 +94,8 @@ footer #footer_blocks .footer_block #_2_ {
 }
 
 .fill:hover {
-  animation: fill 3s linear;
+  -webkit-animation: fill 3s linear;
+          animation: fill 3s linear;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -101,12 +105,32 @@ footer #footer_blocks .footer_block #_2_ {
   font-weight: bold;
 }
 
+@-webkit-keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
 @keyframes tipsy {
   0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
   }
   100% {
     transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes loader {
@@ -120,6 +144,17 @@ footer #footer_blocks .footer_block #_2_ {
     opacity: 0;
   }
 }
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fill {
   0% {
     opacity: 0;
@@ -128,6 +163,14 @@ footer #footer_blocks .footer_block #_2_ {
     opacity: 0.5;
   }
   100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
@@ -358,7 +401,7 @@ header a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: padding-right 450ms ease-in-out;
+  transition: padding-right 330ms ease-in-out;
   height: 82px;
 }
 #PLATS .item p {
@@ -389,14 +432,13 @@ header a {
   white-space: nowrap;
 }
 #PLATS .item:hover .Price {
-  right: -50px;
+  right: -40px;
 }
 #PLATS .item:hover {
   padding-right: 75px;
 }
 #PLATS .item:hover .cross {
-  opacity: 1;
-  transform: translate(-50px);
+  transform: translate(-70px);
 }
 #PLATS .item:hover .fa-check-circle {
   transform: rotate(360deg);
@@ -405,16 +447,15 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 50px;
   height: 63px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
   padding: 10px;
-  right: -50px;
+  right: -70px;
   top: 0;
-  opacity: 0;
   transition: transform 330ms ease-in-out;
 }
 #PLATS .cross .fa-check-circle {
@@ -426,7 +467,8 @@ header a {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  animation: fadein 2s ease-in-out;
+  -webkit-animation: fadein 2s ease-in-out;
+          animation: fadein 2s ease-in-out;
 }
 #Entrées .Subtitle {
   text-align: left;
@@ -443,7 +485,7 @@ header a {
   height: 0;
   width: 50px;
   content: "";
-  border-top: 3px solid #99E2D0;
+  border-top: 3px solid #99e2d0;
 }
 #Entrées .item-title {
   margin-left: 15px;
@@ -474,7 +516,8 @@ header a {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  animation: fadein 4s ease-in-out;
+  -webkit-animation: fadein 4s ease-in-out;
+          animation: fadein 4s ease-in-out;
 }
 #Plats .Subtitle {
   text-align: left;
@@ -491,7 +534,7 @@ header a {
   height: 0;
   width: 50px;
   content: "";
-  border-top: 3px solid #99E2D0;
+  border-top: 3px solid #99e2d0;
 }
 #Plats .item-title {
   margin-left: 15px;
@@ -523,7 +566,8 @@ header a {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  animation: fadein 6s ease-in-out;
+  -webkit-animation: fadein 6s ease-in-out;
+          animation: fadein 6s ease-in-out;
 }
 #DESSERTS .Subtitle {
   text-align: left;
@@ -540,7 +584,7 @@ header a {
   height: 0;
   width: 50px;
   content: "";
-  border-top: 3px solid #99E2D0;
+  border-top: 3px solid #99e2d0;
 }
 #DESSERTS .item-title {
   margin-left: 15px;
@@ -602,7 +646,8 @@ header a {
 #Restaurants .Restaurants_list figure img {
   height: 225px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -681,7 +726,8 @@ body {
 #banner_1_ img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 1440px;
 }
 
@@ -730,13 +776,15 @@ body {
   #banner img {
     height: 400px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   #banner_1_ img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   #Restaurants {
@@ -805,6 +853,4 @@ body {
     width: 1440px;
     margin: auto;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
